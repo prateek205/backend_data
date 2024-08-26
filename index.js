@@ -4,8 +4,8 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 
-index.get("/db.json",(req,res)=>{
-    res.send("db.json")
+index.get("/",(req,res)=>{
+    res.send("Hello World")
 })
 
 index.get("/port",(req,res)=>{
@@ -13,7 +13,7 @@ index.get("/port",(req,res)=>{
 })
 
 
-index.listen(3000,()=>{
+index.listen(4000,()=>{
     console.log("Server is Running");
     
 })
