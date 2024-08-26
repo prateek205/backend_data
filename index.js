@@ -4,8 +4,8 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 
-index.get("/",(req,res)=>{
-    res.send("<h1>Hello World !!!</h1>")
+index.get("/db.json",(req,res)=>{
+    res.send("db.json")
 })
 
 index.get("/port",(req,res)=>{
