@@ -9,7 +9,7 @@ index.get("/db.json",(req,res)=>{
 })
 
 index.get("/port",(req,res)=>{
-    res.send(`port:${process.env.PORT || 3000}`)
+    res.send(`port:${process.env.PORT || 4000}`)
 })
 
 
